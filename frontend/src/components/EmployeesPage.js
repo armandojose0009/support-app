@@ -100,7 +100,7 @@ const EmployeesPage = () => {
     setShowModal(false);
   };
 
-  const handleSave = async (employee) => {
+  const handleSave = async (employee, setFormData) => {
     try {
       let response;
       if (employee._id) {
@@ -112,6 +112,12 @@ const EmployeesPage = () => {
     if( !response.code ) {
       fetchEmployees();
       handleHideModal();
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber: ''
+      });
     }
     } catch (error) {
       console.error('Error saving employee:', error);

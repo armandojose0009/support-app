@@ -30,10 +30,9 @@ const employeeValidationSchema = Joi.object({
       'string.max': 'Phone number must not exceed 20 characters'
     }),
 
-  isActive: Joi.boolean().required()
+  isActive: Joi.boolean()
     .messages({
-      'boolean.base': 'isActive must be a boolean',
-      'any.required': 'isActive is required'
+      'boolean.base': 'isActive must be a boolean'
     })
 }).unknown(true);
 

@@ -30,7 +30,7 @@ const EmployeeModal = ({ show, onHide, onSave, employee }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      onSave(formData);
+      onSave(formData, setFormData);
       onHide();
     } catch (error) {
       console.error('Error saving employee:', error);

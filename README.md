@@ -29,7 +29,7 @@ GOOGLE_SERVICE_ACCOUNT_CLIENT_CERT_URL=https://www.googleapis.com/robot/v1/metad
 GOOGLE_SERVICE_ACCOUNT_UNIVERSE_DOMAIN=googleapis.com
 
 
-HOSTMONGO=localhost
+HOSTMONGO=mongo
 PORTMONGO=27017
 DATABASEMONGO=support-app
 ```
