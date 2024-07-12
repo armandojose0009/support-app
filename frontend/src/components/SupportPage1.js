@@ -3,7 +3,7 @@ import { Table, Button, Pagination } from 'react-bootstrap';
 import axios from 'axios';
 import UpdateStatusModal from './UpdateStatusModal';
 
-const ChangeLog = () => {
+const SupportPage = () => {
   const [logEntries, setLogEntries] = useState([]);
   const [modalShow, setModalShow] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -84,4 +84,4 @@ const ChangeLog = () => {
   );
 };
 
-export default ChangeLog;
+export default SupportPage;

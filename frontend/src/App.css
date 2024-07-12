@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-container {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  margin-top: 56px;
+}
+
+.container {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
